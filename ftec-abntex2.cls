@@ -65,6 +65,8 @@
 \usepackage{textgreek}
 \usepackage{placeins}
 \usepackage{afterpage}
+\usepackage{longtable}
+\usepackage{caption}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,22 +111,22 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
 		
-		\imprimirinstituicao
-	    \vspace*{\fill}
+		\centering
+		\imprimirinstituicao\par
+	    \vspace*{1.0cm}
     
 	    \centering
-    	\vspace*{\fill}
-	    \vspace*{3.0cm}
+		\imprimircurso\par
+	    \vspace*{8.0cm}
     	
 	    {\ABNTEXchapterfont\Large\imprimirtitulo}
     	\vspace*{1.0cm}
 
 	    {\Large\imprimirautor}
     	\vspace*{2.0cm}
-	    \vspace*{\fill}
+		\vspace*{\fill}
     
-
-    
+		\vspace*{\fill}
     	{\imprimirlocal}
 	    \par
     	{\imprimirdata}
